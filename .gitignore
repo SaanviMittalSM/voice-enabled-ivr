@@ -1,3 +1,7 @@
 node_modules/
 .env
 npm-debug.log
+*.out.log
+*.err.log
+server.pid
+CLAUDE.md
