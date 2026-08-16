@@ -14,12 +14,12 @@ wrong entry), then a two-level menu — language (English/Spanish) followed by a
 ```
 curl -X POST http://localhost:3000/trigger-call
 ```
-On Windows PowerShell, `curl` is aliased to `Invoke-WebRequest` and doesn't accept `-X` — use `curl.exe` instead.
 Calls `TARGET_NUMBER` from `PLIVO_FROM_NUMBER` by default. To call a different number without
 editing `.env`, pass `to`:
 ```
 curl -X POST http://localhost:3000/trigger-call -d "to=+1XXXXXXXXXX"
 ```
+On Windows PowerShell, `curl` is aliased to `Invoke-WebRequest` and doesn't accept `-X` — use `curl.exe` instead.
 
 ## Required credentials (see `.env.example`)
 `PLIVO_AUTH_ID`, `PLIVO_AUTH_TOKEN`, `PLIVO_FROM_NUMBER`, `TARGET_NUMBER`, `OTP_DDMM`,
